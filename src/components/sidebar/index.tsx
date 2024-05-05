@@ -12,6 +12,7 @@ import { menuOptions } from "@/lib/constants";
 import clsx from "clsx";
 import { Separator } from "@/components/ui/separator"
 import { LucideMousePointerClick, GitBranchIcon, Database } from "lucide-react";
+import {ModeToggle} from "../global/mode-toggle";
 
 type Props = {};
 
@@ -76,7 +77,7 @@ const MenuOptions = (props: Props) => {
         </div>
       </div>
       <div className="flex justify-center items-center flex-col gap-8">
-                      
+                    <ModeToggle/>  
       </div>
     </nav>
   );
